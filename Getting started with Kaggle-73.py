@@ -1,3 +1,5 @@
+import pandas
+
 ## 2. Looking at the data ##
 
 # We can use the pandas library in python to read in the csv file.
@@ -5,6 +7,9 @@
 titanic = pandas.read_csv("titanic_train.csv")
 
 # Print the first 5 rows of the dataframe.
+print(titanic.head(5))
+
+# Print description of the dataframe.
 print(titanic.describe())
 
 ## 3. Missing data ##
